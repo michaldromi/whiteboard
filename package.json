@@ -1,17 +1,44 @@
 {
-  "name": "plabetr-dice-node",
+  "name": "whiteboard",
   "version": "1.0.0",
-  "description": "NodeJs Package API to show the dice game data",
+  "description": "shared whiteboard",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "playbetr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaldromi/whiteboard.git"
+  },
+  "keywords": [
+    "whiteboard",
+    "socketio",
+    "paint",
+    "canvas"
+  ],
+  "author": "michaldromi",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaldromi/whiteboard/issues"
+  },
+  "homepage": "https://github.com/michaldromi/whiteboard#readme",
   "dependencies": {
-    "connect": "^3.5.0",
-    "express": "^4.14.0",
-    "passport": "^0.3.2",
-    "socket.io": "^2.0.3"
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-react": "^7.20.6",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
